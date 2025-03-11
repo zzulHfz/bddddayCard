@@ -6,6 +6,24 @@
     padding: 0;
 }
 
+.photo-container {
+    position: absolute;
+    top: 20px; /* Adjust the distance from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 5; /* Ensure the image is above other elements */
+}
+
+.profile-photo {
+    width: 150px; /* Adjust the image size */
+    height: 150px;
+    border-radius: 50%; /* Make the image a circle */
+    object-fit: cover; /* Ensure the image fills the circle properly */
+    border: 3px solid white; /* add a white border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* add a shadow to the image */
+}
+
 body {
     font-family: "Roboto", serif;
     background-color: #50C878;
@@ -100,8 +118,8 @@ body {
 }
 
 .card-body p {
-    font-size: 10px;
-    font-weight: 300;
+    font-size: 8.5px;
+    font-weight: 250;
 }
 .card-body p+p {
     margin-top: 10px;
